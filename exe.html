@@ -1,0 +1,146 @@
+<html>
+<head>
+<script>
+function myfunction1(){
+n=prompt("bonjour, tapez votre nom s'il vous plait !");
+do{
+b=prompt("avez vous déjà votre bacalauréat? repondez par oui ou non !")}
+while(b!="oui"&& b!="non");
+if(b=="oui"){a=parseInt(prompt("tapez votre âge s'il vous plait !"));
+if(a>=17){
+   document.getElementById("ff").style.visibility="visible";
+}
+}
+if(b=="non"){
+alert("vous devez avoir un bacalauréat");
+}
+</script>
+<style>
+.mail{float:left;
+	  height:30px;
+	  width:30px;
+	  position:absolute;
+	  top:20px;
+}
+#email:hover{color:white;
+}
+.email2{font-family:ariel;
+margin-left:40px;
+margin-top:0px;
+font-family:Franklin-Gothic-Medium;
+color:#cccccc;
+text-transform:uppercase;
+}
+body{background-color:#333333;
+}
+.logo{position:absolute;
+      top:0px;
+	  right:0px;
+	  height:70px;
+	  width:150px;
+}
+#dv1{position:relative;
+height:15cm;
+width:29,5cm;
+background-image:url(university.jpg);
+}
+#dv2{position:absolute;
+top:200px;
+left:25%;
+font-family:Courier New;
+font-size:25px;
+color:#000000;
+background-color:#f5e8db;
+}
+span{
+color:#1a1a1a;
+}
+#dv3{position:absolute;
+top:230px;
+left:12%;
+font-family:cursive;
+font-size:80px;
+color:#808080;
+text-align:center;
+font-weight:bolder;
+}
+.button1{
+position:absolute;
+top:400px;
+left:42%;
+ border-radius:50px;
+  color:white;
+  padding-right: 50px;
+  padding-left:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:#e4bf9b;
+}
+#ff{
+background-color:#f5f5dc;
+height:5cm;
+border-color:#f5f5dc;
+text-indent:px;
+visibility:hidden;
+}
+.span1{position:relative;
+font-family:Trebuchet MS;
+font-size:30px;
+}
+#p1{
+font-family:Arabic Typesetting;
+color:grey;
+font-size:25px;
+}
+#inputs1{
+position:absolute;
+top:18cm;
+left:10.5cm;
+}
+#inputs2{
+position:absolute;
+top:20cm;
+left:10cm;
+}
+::selection{
+background-color:#e4bf9b;
+}
+#id6{
+position:absolute;
+top:21cm;
+left:14cm;
+}
+</style>
+</head>
+<body onLoad="document.">
+<img src="4x4_logo.jpg" class="logo" alt="fsr" >
+<img src="mail.png" class="mail" id="mail">
+&nbsp;&nbsp;&nbsp;
+<p id="email" class="email2">bahdadsalma94@gmail.com</p><br>
+<div id="dv1">
+<div id="dv2">
+Plus qu'un Site Web, <span>un ORIENTEUR !</span></div>
+<br>
+<div id="dv3">Décide ton université</div>
+<br>
+<button class="button1" onClick="myfunction1()
+">commencer</button>
+</div>
+<div id="ff">
+<h2 align="center" style="font-family:Impact;"><font color="#333333">SAISISSEZ VOS CHOIX</h2>
+<form>
+<div id="inputs1"><img src="save-money.png" height="50px"><span class="span1">&nbsp;Privée</span>&nbsp;
+<input id="prv" type="button" name="prv" onClick="
+ alert('on vous recommande luniversité internationale de RABAT et l'université Alakhawayn');">&nbsp;
+&nbsp;&nbsp;<span class="span1">&nbsp;Publique&nbsp;</span><input id="prv1"  type="button"name="prv" onClick="
+alert('on vous recommande la faculté des sciences de RABAT');">
+</form>
+</div>
+</body>
+</html>
+              
